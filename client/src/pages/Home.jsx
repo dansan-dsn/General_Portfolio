@@ -12,9 +12,7 @@ export default function Home() {
 
   return (
     <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white min-h-screen flex flex-col">
-      {/* Hero Section */}
       <header className="px-8 lg:px-24 py-16 flex flex-col lg:flex-row items-center lg:justify-between">
-        {/* Left Section */}
         <div
           className="lg:w-1/2 space-y-8 text-center lg:text-left"
           data-aos="fade-right"
@@ -36,21 +34,8 @@ export default function Home() {
             <FaArrowRight />
           </Link>
         </div>
-
-        {/* Right Section */}
-        {/* <div
-          className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center"
-          data-aos="fade-left"
-        >
-          <img
-            src="https://via.placeholder.com/500x400"
-            alt="Hero Illustration"
-            className="rounded-lg shadow-2xl"
-          />
-        </div> */}
       </header>
 
-      {/* About Section */}
       <section
         className="bg-gray-900 py-20 px-8 lg:px-24 text-center space-y-8"
         data-aos="fade-up"
@@ -66,7 +51,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Services Section */}
       <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-8 lg:px-24">
         <div
           className="text-center space-y-8"
@@ -111,7 +95,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

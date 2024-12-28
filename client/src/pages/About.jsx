@@ -80,7 +80,6 @@ export default function Team() {
 
   return (
     <div className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white p-8 md:p-16 lg:p-20 flex flex-col min-h-screen">
-      {/* Page Header */}
       <div
         className="flex flex-col place-items-center text-center mb-10"
         data-aos="fade-up"
@@ -94,7 +93,6 @@ export default function Team() {
         </p>
       </div>
 
-      {/* Team Members */}
       <div className="flex flex-col gap-12 mb-auto">
         {teamMembers.map((member, index) => (
           <div
@@ -106,14 +104,12 @@ export default function Team() {
             } gap-8`}
             data-aos={member.alignment === "left" ? "fade-right" : "fade-left"}
           >
-            {/* Profile Icon */}
             <div
               className={`w-40 h-40 md:w-60 md:h-60 rounded-full flex justify-center items-center shadow-lg ${member.bgColor}`}
             >
               {member.icon}
             </div>
 
-            {/* Profile Description */}
             <div
               className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left space-y-4"
               data-aos="fade-up"
@@ -149,7 +145,6 @@ export default function Team() {
         ))}
       </div>
 
-      {/* Footer */}
       <div className="">
         <Footer />
       </div>
