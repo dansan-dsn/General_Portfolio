@@ -1,12 +1,18 @@
-import React from "react";
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div
       className="flex-grow overflow-y-auto"
@@ -18,18 +24,28 @@ export default function Contact() {
     >
       <div className="flex flex-col xl:flex-row gap-3 min-h-screen xl:justify-between px-7 xl:px-28">
         <section className="">
-          <h2 className="text-2xl font-bold my-20 text-[#CFAAAA] sm:flex sm:justify-center sm:text-3xl xl:block xl:text-4xl">
+          <h2
+            className="text-2xl font-bold my-20 text-[#CFAAAA] sm:flex sm:justify-center sm:text-3xl xl:block xl:text-4xl"
+            data-aos="fade-up"
+          >
             Need our help.
             <p>We reach your desires.</p>
           </h2>
           <div className="flex gap-4 items-center ">
-            <div className="bg-[#181D25] grid place-items-center w-12 h-12 rounded-md">
+            <div
+              className="bg-[#181D25] grid place-items-center w-12 h-12 rounded-md"
+              data-aos="flip-up"
+            >
               <div className="bg-[#30323F] rounded-full h-10 w-10 grid place-items-center">
                 <MdEmail className="text-2xl text-white" />
               </div>
             </div>
             <div>
-              <p className="text-2xl text-[#979AA1]">
+              <p
+                className="text-2xl text-[#979AA1]"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
                 <b className="text-lg text-[#CDD6F6]">Mail Us: </b> me@gmail.com
               </p>
               <p className="text-[#93A7EA]">
@@ -39,13 +55,20 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex gap-4 items-center my-10 sm:justify-center xl:justify-start">
-            <div className="bg-[#181D25] grid place-items-center w-12 h-12 rounded-md">
+            <div
+              className="bg-[#181D25] grid place-items-center w-12 h-12 rounded-md"
+              data-aos="flip-up"
+            >
               <div className="bg-[#30323F] rounded-full h-10 w-10 grid place-items-center">
                 <FiPhoneCall className="text-2xl text-white" />
               </div>
             </div>
             <div>
-              <p className="text-2xl text-[#979AA1]">
+              <p
+                className="text-2xl text-[#979AA1]"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
                 <b className="text-lg text-[#CDD6F6]">Call Us: </b> +256
                 763738369
               </p>
@@ -55,13 +78,20 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex gap-4 items-center sm:justify-end xl:justify-start">
-            <div className="bg-[#181D25] grid place-items-center w-12 h-12 rounded-md">
+            <div
+              className="bg-[#181D25] grid place-items-center w-12 h-12 rounded-md"
+              data-aos="flip-up"
+            >
               <div className="bg-[#30323F] rounded-full h-10 w-10 grid place-items-center">
                 <FaLocationDot className="text-2xl text-white" />
               </div>
             </div>
             <div>
-              <p className="text-2xl text-[#979AA1]">
+              <p
+                className="text-2xl text-[#979AA1]"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
                 <b className="text-lg text-[#CDD6F6]">Address: </b> at your door
               </p>
               <p className="text-[#93A7EA]">
@@ -77,7 +107,7 @@ export default function Contact() {
               Connect with us now.
             </span>
           </h3>
-          <form className="mt-20">
+          <form className="mt-20" data-aos="fade-up">
             <div className="">
               <label>
                 your name <span className="text-red-500">*</span>
