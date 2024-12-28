@@ -115,37 +115,61 @@ export default function Contact() {
               <h2 className="text-center my-5 font-bold">How to Help</h2>
               <div className="grid grid-col-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <input type="checkbox" id="web_design" />
+                  <input
+                    type="checkbox"
+                    className="accent-amber-700"
+                    id="web_design"
+                  />
                   <label htmlFor="web_design" className="ml-2">
                     Web Design & Programming
                   </label>
                 </div>
                 <div>
-                  <input type="checkbox" id="web_hosting" />
+                  <input
+                    type="checkbox"
+                    className="accent-amber-700"
+                    id="web_hosting"
+                  />
                   <label htmlFor="web_hosting" className="ml-2">
                     Web hosting
                   </label>
                 </div>
                 <div>
-                  <input type="checkbox" id="mobile_dev" />
+                  <input
+                    type="checkbox"
+                    className="accent-amber-700"
+                    id="mobile_dev"
+                  />
                   <label htmlFor="mobile_dev" className="ml-2">
                     Mobile App Development
                   </label>
                 </div>
                 <div>
-                  <input type="checkbox" id="db_management" />
+                  <input
+                    type="checkbox"
+                    className="accent-amber-700"
+                    id="db_management"
+                  />
                   <label htmlFor="db_management" className="ml-2">
                     Database Management
                   </label>
                 </div>
                 <div>
-                  <input type="checkbox" id="ui_ux" />
+                  <input
+                    type="checkbox"
+                    className="accent-amber-700"
+                    id="ui_ux"
+                  />
                   <label htmlFor="ui_ux" className="ml-2">
                     UI/UX desgin
                   </label>
                 </div>
                 <div>
-                  <input type="checkbox" id="search_engine" />
+                  <input
+                    type="checkbox"
+                    className="accent-amber-700"
+                    id="search_engine"
+                  />
                   <label htmlFor="search_engine" className="ml-2">
                     Search Engine Optimization
                   </label>

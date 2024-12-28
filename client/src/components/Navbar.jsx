@@ -31,7 +31,11 @@ export default function Navbar() {
         isScrolled ? "shadow-md shadow-zinc-950" : "shadow-none"
       }`}
     >
-      <Link to="/" className="text-4xl font-bold">
+      <Link
+        to="/"
+        className="text-4xl font-bold text-rose-800 hover:opacity-80"
+        style={{ textShadow: "2px 2px 4px" }}
+      >
         SKILline
       </Link>
 
