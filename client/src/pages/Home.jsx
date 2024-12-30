@@ -23,6 +23,7 @@ export default function Home() {
           </h1>
           <p className="text-lg text-gray-300">
             Passionate developers crafting exceptional digital solutions to meet
+            {/* Aarclays@28 */}
             your needs. Let us bring your ideas to life with creativity and
             expertise.
           </p>
@@ -99,3 +100,9 @@ export default function Home() {
     </div>
   );
 }
+
+// mayhem
+// boss level
+// rocky handsome
+// the roundup
+//
