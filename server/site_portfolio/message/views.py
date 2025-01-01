@@ -10,7 +10,7 @@ def send_email(data):
     message = f"""
         Name: {data['name']}\n
         Email: {data['email']}\n
-        Message: {data['message']}\n
+        Message: {data['text']}\n
         Services: {', '.join(data['services'])}
     """
     recipient_list = ['ddryn970@gmail.com']
@@ -36,11 +36,11 @@ def create_message(request):
 
         # Send email with the message data
         if send_email(request.data):
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response({'message':'Email sent successfully' ,'data':serializer.data}, status=status.HTTP_201_CREATED)
         else:
             return Response({'error': 'Email not sent'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
             
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    return Response({'error': 'Invalid data', 'details': serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET'])
 def get_message(request):
