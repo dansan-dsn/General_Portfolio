@@ -36,7 +36,7 @@ export default function Navbar() {
         className="text-4xl font-bold text-rose-800 hover:opacity-80"
         style={{ textShadow: "2px 2px 4px" }}
       >
-        SKILline
+        CreoVault
       </Link>
 
       <div className="navs:hidden">
